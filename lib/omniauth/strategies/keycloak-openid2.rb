@@ -128,7 +128,7 @@ module OmniAuth
                 id_token
             end
 
-            OmniAuth.config.add_camelization('keycloak_openid', 'KeycloakOpenId')
+            OmniAuth.config.add_camelization('keycloak_openid2', 'KeycloakOpenId')
         end
     end
 end
