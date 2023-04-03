@@ -5,7 +5,7 @@ require 'uri'
 
 module OmniAuth
     module Strategies
-        class KeycloakOpenId2 < OmniAuth::Strategies::OAuth2
+        class ThirdPartyKeycloakOpenId < OmniAuth::Strategies::OAuth2
 
             class Error < RuntimeError; end
             class ConfigurationError < Error; end
@@ -128,7 +128,7 @@ module OmniAuth
                 id_token
             end
 
-            OmniAuth.config.add_camelization('keycloak_openid2', 'KeycloakOpenId2')
+            OmniAuth.config.add_camelization('keycloak_openid_third_party', 'ThirdPartyKeycloakOpenId')
         end
     end
 end
