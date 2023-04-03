@@ -5,7 +5,7 @@ require 'uri'
 
 module OmniAuth
     module Strategies
-        class KeycloakOpenId < OmniAuth::Strategies::OAuth2
+        class KeycloakOpenId2 < OmniAuth::Strategies::OAuth2
 
             class Error < RuntimeError; end
             class ConfigurationError < Error; end
